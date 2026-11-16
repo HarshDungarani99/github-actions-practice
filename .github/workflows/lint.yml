@@ -16,6 +16,11 @@ jobs:
       - name: clone the code
         uses: actions/checkout@v7
 
+      - name: setup the python version
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
       - name: install ruff for linter
         run: pip install ruff
 
