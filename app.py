@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "<h1>Hello, World!</h1><p>Welcome to your simple Flask app.</p>"
+    return "<h1>Hello, Universe!</h1><p>Welcome to the simple Flask app.</p>"
 
 @app.route("/user/<name>")
 def greet_user(name):
