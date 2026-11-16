@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-def home()
+def home():
     return "<h1>Hello, Universe!</h1><p>Welcome to the simple Flask app.</p>"
 
 @app.route("/user/<name>")
